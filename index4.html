@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Simple BMI Calculator</title>
+  </head>
+  <style media="screen">
+    body{
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      font-family: sans-serif;
+      background-image: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(234,117,125,1) 99%);
+      min-height: 100vh;
+    }
+
+    .form{
+      width: 500px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color: white;
+      transform: translate(-50%,-50%);
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 1px 1px 20px #ee5253;
+    }
+
+    .btn{
+      font-family: inherit;
+      margin-top: 10px;
+      border: none;
+      color: #fff;
+      background-image:  linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(234,117,125,1) 99%);
+      width: 150px;
+      padding: 10px;
+      outline: none;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+
+    .btn:hover{
+      box-shadow: 1px 1px 10px #314f97;
+    }
+
+    #info{
+      font-size: 12px;
+      font-family: inherit;
+    }
+
+  </style>
+  <body>
+    <div class="form">
+    <h1>BMI Calculator</h1>
+    <form action="/" method="post">
+      <input type="text" name="num1" placeholder="Height">
+      <input type="text" name="num2" placeholder="Weight">
+      <p id="result"></p>
+      <button class="btn" type="submit" name="submit">Calculate</button>
+      <p id="info">Please Enter Height[cm] And Weight[kg]</p>
+    </form>
+  </div>
+  </body>
+</html>
